@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Library.Entities;
+using Library.Entities; // o Library.Entities.Entities, según lo que veas
+
 namespace Api1.Data
 {
     public class ApplicationDbContext : DbContext
@@ -7,13 +8,11 @@ namespace Api1.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
-        public DbSet<Voluntario> Voluntarios { get; set; }
+
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Voluntario> Voluntarios { get; set; }
         public DbSet<Organizador> Organizadores { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-            // Configuraciones adicionales del modelo si es necesario
-        }
     }
+}
+
 }

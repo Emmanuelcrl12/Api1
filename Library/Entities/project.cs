@@ -1,4 +1,4 @@
-﻿namespace Api1.Entities
+﻿namespace Library.Entities
 {
     public class project
     {
