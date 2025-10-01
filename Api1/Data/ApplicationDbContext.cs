@@ -9,10 +9,10 @@ namespace Api1.Data
         {
         }
 
-        public DbSet<Project> Projects { get; set; }
+        public DbSet<project> Projects { get; set; }
         public DbSet<Voluntario> Voluntarios { get; set; }
         public DbSet<Organizador> Organizadores { get; set; }
     }
 }
 
-}
+

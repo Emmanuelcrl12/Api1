@@ -1,15 +1,22 @@
-﻿namespace Library.Entities
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Library.Entities
 {
     public class Voluntario
     {
 
-        public int ID { get; set; } 
+        public int ID { get; set; }
         public string Nombre { get; set; }
         public string Nacionalidad { get; set; }
         public string Profesion { get; set; }
         public string Idiomas { get; set; }
         public string AreaInteres { get; set; }
         public int Disponibilidad { get; set; }
-    }   
+    }
 
 }
